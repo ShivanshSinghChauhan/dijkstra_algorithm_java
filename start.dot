@@ -1,0 +1,34 @@
+graph G {
+
+// Node Style
+node [style="filled" color="lightgray" penwidth=2]
+
+// Edge Style
+edge [penwidth=3]
+
+// Nodes
+A [label="A -- Cost: 0" color="salmon" starting=true]
+Y [label="Y -- Cost: Inf"]
+X [label="X -- Cost: Inf"]
+E [label="E -- Cost: Inf"]
+V [label="V -- Cost: Inf"]
+D [label="D -- Cost: Inf"]
+C [label="C -- Cost: Inf"]
+Z [label="Z -- Cost: Inf"]
+B [label="B -- Cost: Inf" ending=true]
+
+// Edges
+A -- X [label="7" weight=7]
+A -- Z [label="10" weight=10]
+A -- E [label="10" weight=10]
+Z -- E [label="1" weight=1]
+X -- E [label="3" weight=3]
+Z -- B [label="5" weight=5]
+E -- B [label="4" weight=4]
+A -- Y [label="1" weight=1]
+A -- V [label="2" weight=2]
+Y -- V [label="2" weight=2]
+V -- D [label="4" weight=4]
+D -- C [label="10" weight=10]
+C -- Z [label="10" weight=10]
+}
